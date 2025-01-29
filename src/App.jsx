@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import ToDoList from "./ToDoList";
 import PririorityContainer from "./PririorityContainer";
 import GeminiSection from "./GeminiSection.JSX";
-
+import pic from "./assets/logo.png";
 function App() {
     
   const [items, setItems] = useState([]);
@@ -64,7 +64,7 @@ function App() {
   return (
     <div className={`container w-full  ${darkMode ? "bg-[#121b35]": "bg-white"} pt-16 h-full transition-all duration-500 p-4 flex flex-col  pb-8 shadow-lg gap-4 md:w-[500px] md:mt-4 md:h-fit md:rounded-md md:pt-4`}>
      <div className="wrap w-full flex gap-4 items-center self-center">
-  <img className="w-8 h-8" src="assets/logo.png" alt="Logo" />
+  <img className="w-8 h-8" src={pic} alt="Logo" />
   <h4 className="self-center text-purple-700">ToDo List</h4>
   <div 
     className={`toggleBtn w-11 h-6 rounded-2xl bg-gray-400 px-[2px] flex transition-all duration-500 items-center ml-auto ${darkMode && "justify-end"}`} 
